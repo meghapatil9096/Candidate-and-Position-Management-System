@@ -27,4 +27,12 @@ public class CandidateDTO {
 
     @NotEmpty(message = "At least one position must be selected")
     private List<Long> positionIds;
+
+    public List<Long> getPositionIds() {
+        return positionIds;
+    }
+
+    public void setPositionIds(List<Long> positionIds) {
+        this.positionIds = positionIds;
+    }
 }
